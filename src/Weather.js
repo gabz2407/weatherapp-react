@@ -3,23 +3,21 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
-  const [loaded, setLoaded] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ loaded: false });
 
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
+      loaded: true,
       city: response.data.name,
-      temperature: response.data.main.temp,
+      temperature: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       windSpeed: response.data.wind.speed,
     });
-
-    setLoaded(true);
   }
 
-  if (loaded) {
+  if (weatherData.loaded) {
     return (
       <div className="Weather container">
         <form>
@@ -42,15 +40,14 @@ export default function Weather() {
         <h1>{weatherData.city}</h1>
         <ul>
           <li>todays day and time</li>
-          <li>{weatherData.description}</li>
+          <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row">
-          <div className="col-6">🌻 {weatherData.temperature}˚C</div>
+          <div className="col-6">{weatherData.temperature}˚C</div>
           <div className="col-6">
             <ul>
-              <li>Precipitation: %</li>
               <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind speed: {weatherData.windSpeed}km/h</li>
+              <li>Wind Speed: {weatherData.windSpeed}km/h</li>
             </ul>
           </div>
         </div>
@@ -63,6 +60,6 @@ export default function Weather() {
 
     axios.get(apiUrl).then(handleResponse);
 
-    return "Enter a city";
+    return "Loading...";
   }
 }
