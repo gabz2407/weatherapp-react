@@ -11,8 +11,14 @@ export default function WeatherInfo(props) {
         </li>
         <li className="text-capitalize">{props.info.description}</li>
       </ul>
+
       <div className="row">
-        <div className="col-6">{props.info.temperature}˚C</div>
+        <div className="col-6">
+          <img src={props.info.iconUrl} alt={props.info.description} />
+          <h3 className="col-3">
+            <span>{props.info.temperature}˚C</span>
+          </h3>
+        </div>
         <div className="col-6">
           <ul>
             <li>Humidity: {props.info.humidity}%</li>
