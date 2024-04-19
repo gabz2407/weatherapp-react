@@ -1,0 +1,15 @@
+.App {
+  color: rgb(205, 208, 210);
+}
+
+.App footer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 14px;
+}
+
+.App footer a {
+  text-decoration: none;
+  color: rgb(122, 51, 157);
+}

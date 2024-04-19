@@ -1,1 +1,17 @@
+.Weather {
+  width: 35%;
+  margin: 90px 45% 0 auto;
+  background-color: rgba(56, 10, 79, 0.728);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(137, 138, 139, 0.612);
+}
 
+.Weather form {
+  margin-top: 25px;
+}
+
+.Weather .search-button,
+.search-input {
+  font-size: 15px;
+  padding: 6px 10px;
+}
