@@ -21,7 +21,7 @@
 
 .WeatherInfo .description {
   font-size: 12px;
-  position: fixed;
-  left: 45%;
-  top: 66%;
+  position: relative;
+  left: 70%;
+  bottom: 15px;
 }
