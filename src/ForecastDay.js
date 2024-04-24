@@ -21,8 +21,8 @@ export default function ForecastDay(props) {
         alt={props.forecast.condition.description}
       />
       <div>
-        <span> {max}˚</span>
-        <span className="forecast-min-temp">{min}˚</span>
+        <span className="forecast-max-temp"> {max}˚</span>
+        <span>{min}˚</span>
       </div>
     </div>
   );

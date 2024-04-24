@@ -13,15 +13,19 @@
   padding-top: 50px;
 }
 
-.WeatherInfo .weather-display img {
-  width: 88px;
+.WeatherInfo .unit {
+  width: 90px;
+}
+
+.WeatherInfo .icon {
   position: relative;
-  float: left;
+  left: 220px;
+  top: 15px;
 }
 
 .WeatherInfo .description {
   font-size: 12px;
   position: relative;
-  left: 70%;
-  bottom: 30px;
+  left: 84.5%;
+  bottom: 22px;
 }

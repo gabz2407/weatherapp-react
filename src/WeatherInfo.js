@@ -26,15 +26,19 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
         <div className="col-6 row weather-display">
-          <div className="col-6 mt-3">
-            <img src={props.info.iconUrl} alt={props.info.description} />
+          <div className="col-6 ">
+            <img
+              className="icon"
+              src={props.info.iconUrl}
+              alt={props.info.description}
+            />
           </div>
           <div className="col-6 p-0 mt-3">
             <WeatherUnit celsius={props.info.temperature} />
           </div>
         </div>
 
-        <span className="text-capitalize description">
+        <span className="text-capitalize description me-3">
           {props.info.description}
         </span>
       </div>

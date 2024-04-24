@@ -1,10 +1,9 @@
 .WeatherUnit .temp {
-  font-size: 52px;
-  padding-left: 0px;
+  font-size: 60px;
 }
 
 .WeatherUnit .unit {
-  font-size: 14px;
+  font-size: 20px;
   position: relative;
   bottom: 27px;
 }

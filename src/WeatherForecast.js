@@ -22,7 +22,7 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="grid">
           {forecast.map(function (dailyForecast, index) {
-            if (index < 5) {
+            if (index < 7) {
               return (
                 <div>
                   <div key={index}>
@@ -37,7 +37,7 @@ export default function WeatherForecast(props) {
         </div>
         <div className="forecast-weather-conditions mt-3">
           {forecast.map(function (dailyConditions, day) {
-            if (day < 5) {
+            if (day < 7) {
               return (
                 <div key={day}>
                   <Conditions response={dailyConditions} />
