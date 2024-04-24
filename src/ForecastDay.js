@@ -14,7 +14,7 @@ export default function ForecastDay(props) {
   }
 
   return (
-    <div>
+    <div className="ForecastDay ">
       <div>{day()}</div>
       <img
         src={props.forecast.condition.icon_url}
