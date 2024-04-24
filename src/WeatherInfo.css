@@ -17,15 +17,7 @@
   width: 90px;
 }
 
-.WeatherInfo .icon {
-  position: relative;
-  left: 220px;
-  top: 15px;
-}
-
 .WeatherInfo .description {
   font-size: 12px;
-  position: relative;
-  left: 84.5%;
-  bottom: 22px;
+  padding-right: 30px;
 }

@@ -14,7 +14,7 @@ export default function WeatherInfo(props) {
         </p>
       </div>
       <div className="row">
-        <div className="col-6 weather-data">
+        <div className="col-7 weather-data">
           <ul>
             <li>
               <b className="text-light">Humidity:</b> {props.info.humidity}%
@@ -25,20 +25,20 @@ export default function WeatherInfo(props) {
             </li>
           </ul>
         </div>
-        <div className="col-6 row weather-display">
-          <div className="col-6 ">
+        <div className="col-5 row weather-display">
+          <div className="col-7 ">
             <img
-              className="icon"
+              className="float-end d-block pt-2"
               src={props.info.iconUrl}
               alt={props.info.description}
             />
           </div>
-          <div className="col-6 p-0 mt-3">
+          <div className="col-5 text-end d-block pt-3">
             <WeatherUnit celsius={props.info.temperature} />
           </div>
         </div>
 
-        <span className="text-capitalize description me-3">
+        <span className="text-capitalize text-end description">
           {props.info.description}
         </span>
       </div>
