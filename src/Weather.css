@@ -1,13 +1,14 @@
-.Weather {
+.Weather article {
   width: 35%;
-  margin: 90px 45% 0 auto;
-  background-color: rgba(56, 10, 79, 0.728);
+  margin: 100px 45% 0 auto;
+  background-color: rgb(37, 1, 67);
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(137, 138, 139, 0.612);
+  box-shadow: 5px 5px 5px rgba(60, 60, 60, 0.612);
 }
 
 .Weather form {
   margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 .Weather .search-button,

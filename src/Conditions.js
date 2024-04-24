@@ -2,7 +2,6 @@ import React from "react";
 import "./Conditions.css";
 
 export default function Conditions(props) {
-  console.log(props);
   let max = Math.round(props.response.temperature.maximum);
   let min = Math.round(props.response.temperature.minimum);
 
@@ -25,11 +24,13 @@ export default function Conditions(props) {
   return (
     <div className="Conditions">
       <div className="row ps-1">
-        <div className="col-6 fw-semibold fs-6 pb-1">{day()}</div>
+        <div className="col-6 fw-semibold fs-6 pb-1 text-light">{day()}</div>
         <div className="text-capitalize col-6 fw-medium text-end fs-6">
           {" "}
           {max}˚ | <span className="opacity-75 ">{min}˚ </span>{" "}
-          {props.response.condition.description}
+          <span className="text-light">
+            {props.response.condition.description}
+          </span>
         </div>
       </div>
       <div className="ps-1">

@@ -36,11 +36,11 @@ export default function WeatherForecast(props) {
           })}
         </div>
         <div className="forecast-weather-conditions mt-3">
-          {forecast.map(function (dailyForecast, index) {
-            if (index < 5) {
+          {forecast.map(function (dailyConditions, day) {
+            if (day < 5) {
               return (
-                <div>
-                  <Conditions response={dailyForecast} />
+                <div key={day}>
+                  <Conditions response={dailyConditions} />
                 </div>
               );
             } else {

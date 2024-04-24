@@ -10,7 +10,7 @@
 .WeatherInfo .weather-data ul {
   list-style: none;
   padding-left: 15px;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .WeatherInfo .weather-display img {
@@ -23,5 +23,5 @@
   font-size: 12px;
   position: relative;
   left: 70%;
-  bottom: 15px;
+  bottom: 30px;
 }

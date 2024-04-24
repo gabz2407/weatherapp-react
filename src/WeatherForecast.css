@@ -1,6 +1,6 @@
 .WeatherForecast {
   text-align: center;
-  padding: 15px 0 15px;
+  padding: 20px 0px;
   border-top: 1px solid rgba(128, 128, 128, 0.515);
   margin-top: 20px;
 }
@@ -16,4 +16,5 @@
 .grid {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 10px;
 }
