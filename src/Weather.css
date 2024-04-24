@@ -18,3 +18,9 @@
 .search-input {
   font-size: 15px;
 }
+
+@media (min-width: 500px) and (max-width: 992px) {
+  .Weather .article {
+    width: 100%;
+  }
+}

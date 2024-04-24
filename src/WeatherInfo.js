@@ -26,14 +26,14 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
         <div className="col-5 row weather-display">
-          <div className="col-7 ">
+          <div className="col-9">
             <img
-              className="float-end d-block pt-2"
+              className="float-end ps-5 pt-3"
               src={props.info.iconUrl}
               alt={props.info.description}
             />
           </div>
-          <div className="col-5 text-end d-block pt-3">
+          <div className="col-3 text-end d-block pt-3">
             <WeatherUnit celsius={props.info.temperature} />
           </div>
         </div>
