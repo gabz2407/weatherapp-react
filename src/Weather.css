@@ -2,7 +2,7 @@
   padding-top: 20px;
 }
 
-.Weather .article {
+.Weather .section {
   width: 75%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.186);
@@ -19,8 +19,41 @@
   font-size: 15px;
 }
 
-@media (min-width: 500px) and (max-width: 992px) {
-  .Weather .article {
+@media (max-width: 992px) {
+  .Weather .section {
     width: 100%;
+  }
+  .Weather {
+    padding: 0px;
+  }
+
+  .WeatherInfo .weather-display {
+    margin-top: 25px;
+  }
+
+  .WeatherInfo .weather-display img {
+    width: 70px;
+    margin: 5px 2px 0 0;
+  }
+
+  .WeatherInfo .weather-data ul {
+    font-size: 12px;
+  }
+
+  .WeatherInfo .description {
+    font-size: 10px;
+  }
+
+  .WeatherUnit .temp {
+    font-size: 50px;
+  }
+
+  .WeatherUnit .unit {
+    font-size: 18px;
+    bottom: 25px;
+  }
+
+  .Conditions .forecast-heading {
+    font-size: 14px;
   }
 }

@@ -23,11 +23,11 @@ export default function Conditions(props) {
   }
   return (
     <div className="Conditions">
-      <div className="row ps-1">
-        <div className="col-6 fw-semibold fs-6 pb-1 text-light">{day()}</div>
-        <div className="text-capitalize col-6 fw-medium text-end fs-6">
+      <div className="row ps-1 forecast-heading">
+        <div className="col-6 fw-semibold pb-1 text-light">{day()}</div>
+        <div className="text-capitalize col-6 fw-medium text-end">
           {" "}
-          {max}˚ | <span className="opacity-75 ">{min}˚ </span>{" "}
+          {max}˚ | <span className="opacity-75">{min}˚ </span>{" "}
           <span className="text-light">
             {props.response.condition.description}
           </span>
@@ -35,7 +35,7 @@ export default function Conditions(props) {
       </div>
       <div className="ps-1">
         <div>
-          <span> Humidity:</span> {props.response.temperature.humidity}%
+          <span>Humidity:</span> {props.response.temperature.humidity}%
         </div>
         <div>
           <span>Wind Speed:</span> {props.response.wind.speed} km/h

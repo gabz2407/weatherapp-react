@@ -44,10 +44,10 @@ export default function Weather(props) {
   if (weatherData.loaded) {
     return (
       <div className="Weather container">
-        <div className="article">
+        <div className="section">
           <form onSubmit={handleSubmit}>
             <div className="row pe-4 ps-2">
-              <div className="col-10 mt-4">
+              <div className="col-md-10 col-9 mt-4">
                 <input
                   type="search"
                   placeholder="Enter a city..."
@@ -59,7 +59,7 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-light col-2 mt-4 search-button"
+                className="btn btn-light col-md-2 col-3 mt-4 search-button"
               />
             </div>
           </form>

@@ -13,12 +13,6 @@
   padding-top: 50px;
 }
 
-.WeatherInfo .unit {
-  width: 90px;
-  bottom: 30px;
-}
-
 .WeatherInfo .description {
-  font-size: 12px;
-  padding-right: 30px;
+  font-size: smaller;
 }
