@@ -9,7 +9,7 @@ export default function App() {
         <footer>
           This project was coded by{" "}
           <a
-            href="https://www.linkedin.com/in/gabriela-agostinho-378b67207/"
+            href="https://www.linkedin.com/in/gabriela-agostinho24/"
             target="_blank"
             rel="noreferrer"
           >
